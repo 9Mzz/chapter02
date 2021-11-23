@@ -8,8 +8,8 @@ public class Goods {
 	
 	//메소드 정의
 	//값 읽음
-	public void setName(String n) {
-		name = n;
+	public void setName(String name) {
+		this.name = name;
 	}
 	//값 씀
 	public String getName() {
@@ -17,8 +17,8 @@ public class Goods {
 	}
 
 	//setPrice / getPrice
-	public void setPrice(int p) {
-		price = p;
+	public void setPrice(int price) {
+		this.price = price;
 	}
 	public int getPrice() {
 		return price;
