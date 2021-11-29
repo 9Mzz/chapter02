@@ -23,7 +23,6 @@ public class Student extends Person {
 		 */
 		// 부모생성자 실행
 		// super(name, age);
-
 		super();
 		super.name = name;
 		super.age = age;
@@ -57,5 +56,6 @@ public class Student extends Person {
 		System.out.println("");
 
 	}
+	
 
 }
