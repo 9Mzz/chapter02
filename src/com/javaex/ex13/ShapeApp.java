@@ -26,7 +26,7 @@ public class ShapeApp {
 		// 모든 사각형에 선색만 출력
 		Rectangle[] lineA = new Rectangle[3];
 		for (int i = 0; i < rArray.length; i++) {
-			System.out.println(rArray[i].getLinecolor());
+			System.out.println(rArray[i].getLineColor());
 		}
 		System.out.println("-------------------------------");
 		/////////////////////////////////////////////

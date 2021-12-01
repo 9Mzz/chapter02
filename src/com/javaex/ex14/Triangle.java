@@ -1,6 +1,6 @@
 package com.javaex.ex14;
 
-public class Rectangle extends Shape {
+public class Triangle extends Shape {
 
 	// 필드
 	// private String lineColor;
@@ -10,12 +10,12 @@ public class Rectangle extends Shape {
 	private int height;
 
 	// 생성자
-	public Rectangle() {
+	public Triangle() {
 		super(); // Shape 기본생성자 Shape();
 	}
 
 	/* 부모를 고려해서 생성자를 만든다 */
-	public Rectangle(String lineColor, String fillColor, int width, int height) {
+	public Triangle(String lineColor, String fillColor, int width, int height) {
 		super(lineColor, fillColor);
 		this.width = width;
 		this.height = height;
@@ -48,7 +48,7 @@ public class Rectangle extends Shape {
 
 	public void draw() {
 		System.out.println("선색:" + super.lineColor + " 면색:" + super.fillColor + " 가로:" + this.width + " 세로:"
-				+ this.height + " 사각형을 그렸습니다.");
+				+ this.height + " 삼각형을 그렸습니다.");
 	}
 
 }
