@@ -1,6 +1,6 @@
-package com.javaex.ex15;
+package com.javaex.ex17;
 
-public class Triangle extends Shape {
+public class Rectangle extends Shape {
 
 	// 필드
 	// private String lineColor;
@@ -10,12 +10,12 @@ public class Triangle extends Shape {
 	private int height;
 
 	// 생성자
-	public Triangle() {
+	public Rectangle() {
 		super(); // Shape 기본생성자 Shape();
 	}
 
 	/* 부모를 고려해서 생성자를 만든다 */
-	public Triangle(String lineColor, String fillColor, int width, int height) {
+	public Rectangle(String lineColor, String fillColor, int width, int height) {
 		super(lineColor, fillColor);
 		this.width = width;
 		this.height = height;
@@ -46,9 +46,15 @@ public class Triangle extends Shape {
 				+ fillColor + "]";
 	}
 
-	public void draw() {
+	public void draw() {	//draw()메소드를 작성하지 않으면 부모의 draw()가 사용됨.
 		System.out.println("선색:" + super.lineColor + " 면색:" + super.fillColor + " 가로:" + this.width + " 세로:"
-				+ this.height + " 삼각형을 그렸습니다.");
+				+ this.height + " 사각형을 그렸습니다.");
+	}
+
+	public double area() {	//Shape 추상클래스(미완성 클래스)를 상속받았음
+							//Shape를 상속 받으려면 미완성인 부분을 구현해줘야함 area() 작성해야함
+		double result = width * height;
+		return result;
 	}
 
 }

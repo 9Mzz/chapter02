@@ -1,4 +1,4 @@
-package com.javaex.ex15;
+package com.javaex.ex17;
 
 public class Triangle extends Shape {
 
@@ -49,6 +49,12 @@ public class Triangle extends Shape {
 	public void draw() {
 		System.out.println("선색:" + super.lineColor + " 면색:" + super.fillColor + " 가로:" + this.width + " 세로:"
 				+ this.height + " 삼각형을 그렸습니다.");
+	}
+
+	public double area() {
+		double result = (width * height) / 2;
+		return result;
+
 	}
 
 }

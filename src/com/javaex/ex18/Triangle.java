@@ -1,6 +1,6 @@
-package com.javaex.ex15;
+package com.javaex.ex18;
 
-public class Triangle extends Shape {
+public class Triangle extends Shape implements Drawable {
 
 	// 필드
 	// private String lineColor;
@@ -46,9 +46,15 @@ public class Triangle extends Shape {
 				+ fillColor + "]";
 	}
 
-	public void draw() {
+	public void draw() {	//인터페이스의 메소드를 구현.
 		System.out.println("선색:" + super.lineColor + " 면색:" + super.fillColor + " 가로:" + this.width + " 세로:"
 				+ this.height + " 삼각형을 그렸습니다.");
+	}
+
+	public double area() {
+		double result = (width * height) / 2;
+		return result;
+
 	}
 
 }

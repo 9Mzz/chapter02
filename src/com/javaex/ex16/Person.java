@@ -20,12 +20,12 @@ public class Person {
 		return name;
 	}
 
-	public int getAge() {
-		return age;
-	}
-
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	public int getAge() {
+		return age;
 	}
 
 	public void setAge(int age) {
@@ -37,11 +37,10 @@ public class Person {
 	public String toString() {
 		return "Person [name=" + name + ", age=" + age + "]";
 	}
-
+	
 	public void showInfo() {
-		System.out.println("***********************************");
-		System.out.println("이름: " + name + ", 나이: " + age);
-		System.out.println("***********************************");
+		System.out.println("*****************************");
+		System.out.println("이름: " + name + " 나이:" + age );
+		System.out.println("*****************************");
 	}
-
 }
