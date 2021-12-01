@@ -13,6 +13,7 @@ public class Circle extends Shape {
 		super(); // Shape 기본생성자 Shape();
 	}
 
+	/* 부모를 고려해서 생성자를 만든다 */
 	public Circle(String lineColor, String fillColor, int radius) {
 		super(lineColor, fillColor);
 		this.radius = radius;

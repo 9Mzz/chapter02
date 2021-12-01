@@ -39,15 +39,11 @@ public abstract class Shape { // 추상메소드를 가지고 있어서 클래�
 		return "Shape [lineColor=" + lineColor + ", fillColor=" + fillColor + "]";
 	}
 
-	//자식 클래스가 draw() 반드시 만들지 않아도 됨. <==> 비교해볼것!
+	// 자식 클래스가 draw() 반드시 만들지 않아도 됨. <==> 비교해볼것!
 	public void draw() {
 		System.out.println("선색: " + lineColor + " 면색:" + fillColor + " 도형을 그렸습니다.");
 	}
 
-//	public double area() {
-//
-//		return 0.0; // 억지로 모양을 맞추고 있다.
-//	}
 	public abstract double area();
 	// 추상메소드
 	// 내부코드를 작성할 수 없는 상황

@@ -42,7 +42,7 @@ public class Triangle extends Shape {
 	// 부모쪽에도 같은 메소드가 있다
 	// 부모쪽의 메소드 사용 못하게 할려고 같은 이름으로 "재정의"
 	public String toString() {
-		return "Rectangle [width=" + width + ", height=" + height + ", lineColor=" + lineColor + ", fillColor="
+		return "Triangle [width=" + width + ", height=" + height + ", lineColor=" + lineColor + ", fillColor="
 				+ fillColor + "]";
 	}
 

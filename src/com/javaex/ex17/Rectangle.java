@@ -46,13 +46,13 @@ public class Rectangle extends Shape {
 				+ fillColor + "]";
 	}
 
-	public void draw() {	//draw()메소드를 작성하지 않으면 부모의 draw()가 사용됨.
+	public void draw() { // draw()메소드를 작성하지 않으면 부모의 draw()가 사용됨.
 		System.out.println("선색:" + super.lineColor + " 면색:" + super.fillColor + " 가로:" + this.width + " 세로:"
 				+ this.height + " 사각형을 그렸습니다.");
 	}
 
-	public double area() {	//Shape 추상클래스(미완성 클래스)를 상속받았음
-							//Shape를 상속 받으려면 미완성인 부분을 구현해줘야함 area() 작성해야함
+	public double area() { // Shape 추상클래스(미완성 클래스)를 상속받았음
+							// Shape를 상속 받으려면 미완성인 부분을 구현해줘야함 area() 작성해야함
 		double result = width * height;
 		return result;
 	}
